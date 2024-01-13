@@ -49,13 +49,13 @@ public class AddActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (TextUtils.isEmpty(add_name.getText().toString())) {
-                    add_name.setError("Please enter name");
+                    add_name.setError(getString(R.string.please_enter_name));
                 } else if (TextUtils.isEmpty(add_email.getText().toString())) {
-                    add_email.setError("Please enter email");
+                    add_email.setError(getString(R.string.please_enter_email));
                 } else if (!add_email.getText().toString().trim().matches(emailPattern)) {
-                    add_email.setError("Please enter valid email");
+                    add_email.setError(getString(R.string.please_enter_valid_email));
                 }else if (TextUtils.isEmpty(add_course.getText().toString())) {
-                    add_course.setError("Please enter course");
+                    add_course.setError(getString(R.string.please_enter_course));
                 } else {
                     dbRef = FirebaseDatabase.getInstance().getReference().child("students");
                     String key = dbRef.push().getKey();
@@ -70,7 +70,7 @@ public class AddActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
-                                Toast.makeText(AddActivity.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(AddActivity.this, R.string.data_inserted_successfully, Toast.LENGTH_SHORT).show();
                                 finish();
                             }
                         }

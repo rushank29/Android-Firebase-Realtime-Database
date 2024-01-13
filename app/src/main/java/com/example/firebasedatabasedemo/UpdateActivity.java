@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -30,9 +31,8 @@ public class UpdateActivity extends AppCompatActivity {
     ImageView back_arrow_button;
     TextInputEditText update_name, update_email, update_course;
     Button update_button, delete_button;
-    DatabaseReference dbRef;
-    ArrayList<MainModel> studentList;
     String id, name, email, course;
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     private static final String TAG = "UpdateActivity";
 
     @Override
@@ -59,10 +59,20 @@ public class UpdateActivity extends AppCompatActivity {
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uName = update_name.getText().toString().trim();
-                String uEmail = update_email.getText().toString().trim();
-                String uCourse = update_course.getText().toString().trim();
-                updateStudentData(id, uName, uEmail, uCourse);
+                if (TextUtils.isEmpty(update_name.getText().toString())) {
+                    update_name.setError("Please enter name");
+                } else if (TextUtils.isEmpty(update_email.getText().toString())) {
+                    update_email.setError("Please enter email");
+                } else if (!update_email.getText().toString().trim().matches(emailPattern)) {
+                    update_email.setError("Please enter valid email");
+                }else if (TextUtils.isEmpty(update_course.getText().toString())) {
+                    update_course.setError("Please enter course");
+                } else {
+                    String uName = update_name.getText().toString().trim();
+                    String uEmail = update_email.getText().toString().trim();
+                    String uCourse = update_course.getText().toString().trim();
+                    updateStudentData(id, uName, uEmail, uCourse);
+                }
             }
         });
 
@@ -96,9 +106,9 @@ public class UpdateActivity extends AppCompatActivity {
     void updateStudentData(String id, String name, String email, String course) {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("students").child(id);
         Map<String, Object> map = new HashMap<>();
-        map.put("name", name);
-        map.put("email", email);
-        map.put("course", course);
+        map.put(String.valueOf(R.string.name_intent), name);
+        map.put(String.valueOf(R.string.email_intent), email);
+        map.put(String.valueOf(R.string.course_intent), course);
 
         reference.updateChildren(map).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
@@ -120,9 +130,9 @@ public class UpdateActivity extends AppCompatActivity {
 
     void confirmDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Delete " + name + " ?");
-        builder.setMessage("Are you sure you want to delete " + name + " ?");
-        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setTitle(getString(R.string.delete) + name + " ?");
+        builder.setMessage(getString(R.string.are_you_sure_you_want_to_delete) + name + " ?");
+        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int i) {
                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("students").child(id);
@@ -130,7 +140,7 @@ public class UpdateActivity extends AppCompatActivity {
                 finish();
             }
         });
-        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int i) {
 

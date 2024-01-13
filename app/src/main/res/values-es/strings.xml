@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Spanish language-->
+<resources>
+    <string name="app_name">FirebaseDatabaseDemo</string>
+    <string name="add_new_data">Agregar nuevos datos</string>
+    <string name="name">Nombre</string>
+    <string name="email">Correo electrónico</string>
+    <string name="course">Curso</string>
+    <string name="add">Agregar</string>
+    <string name="please_enter_name">Por favor ingrese el nombre</string>
+    <string name="please_enter_email">Por favor ingrese el correo electrónico</string>
+    <string name="please_enter_valid_email">Por favor introduzca un correo electrónico válido</string>
+    <string name="please_enter_course">Por favor ingresa al curso</string>
+    <string name="data_inserted_successfully">Datos insertados exitosamente</string>
+    <string name="student_list">Lista de estudiantes</string>
+    <string name="student_name">Nombre del estudiante</string>
+    <string name="email_id">Identificación de correo</string>
+    <string name="course_name">Nombre del curso</string>
+    <string name="are_you_sure_you_want_to_delete">estas seguro que quieres borrarlo</string>
+    <string name="no">No</string>
+    <string name="yes">Sí</string>
+    <string name="delete">Borrar</string>
+    <string name="name_intent">nombre</string>
+    <string name="students">estudiantes</string>
+    <string name="email_intent">correo electrónico</string>
+    <string name="course_intent">curso</string>
+    <string name="id">identificación</string>
+    <string name="update">Actualizar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="german">German</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="hindi">Hindi</string>
+    <string name="chinese">Chinese</string>
+    <string name="languages">Languages</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Chinese language-->
+<resources>
+    <string name="app_name">FirebaseDatabaseDemo</string>
+    <string name="add_new_data">添加新数据</string>
+    <string name="name">姓名</string>
+    <string name="email">电子邮件</string>
+    <string name="course">课程</string>
+    <string name="add">添加</string>
+    <string name="please_enter_name">请输入姓名</string>
+    <string name="please_enter_email">请输入电子邮件</string>
+    <string name="please_enter_valid_email">请输入有效的电子邮件</string>
+    <string name="please_enter_course">请输入课程</string>
+    <string name="data_inserted_successfully">数据插入成功</string>
+    <string name="student_list">学生名单</string>
+    <string name="student_name">学生姓名</string>
+    <string name="email_id">电子邮件ID</string>
+    <string name="course_name">课程名</string>
+    <string name="are_you_sure_you_want_to_delete">你确定你要删除</string>
+    <string name="no">不</string>
+    <string name="yes">是的</string>
+    <string name="delete">删除</string>
+    <string name="name_intent">姓名</string>
+    <string name="students">学生</string>
+    <string name="email_intent">电子邮件</string>
+    <string name="course_intent">课程</string>
+    <string name="id">ID</string>
+    <string name="update">更新</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="german">German</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="hindi">Hindi</string>
+    <string name="chinese">Chinese</string>
+    <string name="languages">Languages</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--French language-->
+<resources>
+    <string name="app_name">FirebaseDatabaseDemo</string>
+    <string name="add_new_data">Ajouter de nouvelles données</string>
+    <string name="name">Nom</string>
+    <string name="email">E-mail</string>
+    <string name="course">Cours</string>
+    <string name="add">Ajouter</string>
+    <string name="please_enter_name">Veuillez entrer le nom</string>
+    <string name="please_enter_email">Veuillez entrer votre email</string>
+    <string name="please_enter_valid_email">Veuillez entrer une adresse e-mail valide</string>
+    <string name="please_enter_course">Veuillez entrer le cours</string>
+    <string name="data_inserted_successfully">Données insérées avec succès</string>
+    <string name="student_list">Liste des étudiants</string>
+    <string name="student_name">Nom d\'étudiant</string>
+    <string name="email_id">Identifiant de courrier électronique</string>
+    <string name="course_name">Nom du cours</string>
+    <string name="are_you_sure_you_want_to_delete">Etes-vous sûr que vous voulez supprimer</string>
+    <string name="no">Non</string>
+    <string name="yes">Oui</string>
+    <string name="delete">Supprimer</string>
+    <string name="name_intent">nom</string>
+    <string name="students">étudiants</string>
+    <string name="email_intent">e-mail</string>
+    <string name="course_intent">cours</string>
+    <string name="id">identifiant</string>
+    <string name="update">Mise à jour</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="german">German</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="hindi">Hindi</string>
+    <string name="chinese">Chinese</string>
+    <string name="languages">Languages</string>
+</resources>

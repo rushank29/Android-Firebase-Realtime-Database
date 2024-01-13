@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Hindi language-->
+<resources>
+    <string name="app_name">FirebaseDatabaseDemo</string>
+    <string name="add_new_data">नया डेटा जोड़ें</string>
+    <string name="name">नाम</string>
+    <string name="email">ईमेल</string>
+    <string name="course">अवधि</string>
+    <string name="add">जोड़ना</string>
+    <string name="please_enter_name">कृपया नाम दर्ज करें</string>
+    <string name="please_enter_email">कृपया ईमेल दर्ज करें</string>
+    <string name="please_enter_valid_email">कृपया वैध ईमेल दर्ज़ करें</string>
+    <string name="please_enter_course">कृपया पाठ्यक्रम दर्ज करें</string>
+    <string name="data_inserted_successfully">डेटा सफलतापूर्वक डाला गया</string>
+    <string name="student_list">छात्र सूची</string>
+    <string name="student_name">छात्र का नाम</string>
+    <string name="email_id">ईमेल आईडी</string>
+    <string name="course_name">कोर्स का नाम</string>
+    <string name="are_you_sure_you_want_to_delete">क्या आप आश्वस्त है कि आपको डिलीट करना है</string>
+    <string name="no">नहीं</string>
+    <string name="yes">हाँ</string>
+    <string name="delete">मिटाना</string>
+    <string name="name_intent">नाम</string>
+    <string name="students">छात्र</string>
+    <string name="email_intent">ईमेल</string>
+    <string name="course_intent">अवधि</string>
+    <string name="id">पहचान</string>
+    <string name="update">अद्यतन</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="german">German</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="hindi">Hindi</string>
+    <string name="chinese">Chinese</string>
+    <string name="languages">Languages</string>
+</resources>

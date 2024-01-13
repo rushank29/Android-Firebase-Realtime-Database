@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Add New Data"
+            android:text="@string/add_new_data"
             android:textColor="@color/black"
             android:textSize="@dimen/_16sdp"
             android:textStyle="bold" />
@@ -47,7 +47,7 @@
                 android:id="@+id/add_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Name"
+                android:hint="@string/name"
                 android:inputType="textCapWords" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -60,7 +60,7 @@
                 android:id="@+id/add_email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,7 +73,7 @@
                 android:id="@+id/add_course"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Course"
+                android:hint="@string/course"
                 android:inputType="textCapWords" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_12sdp"
-            android:text="Add" />
+            android:text="@string/add" />
 
     </LinearLayout>
 
